@@ -51,6 +51,8 @@ const App = (props) => {
         </Navbar>
 
         <Route path="/" exact render={() => <HomePage title={home.title} subtitle={home.subtitle} text={home.text}/>} /> 
+        <Route path="/" exact render={} /> 
+        <Route path="/" exact render={} /> 
         
         <Footer />
       </Container>
