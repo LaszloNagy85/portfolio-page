@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+const App = (props) => {
+  const title = "Laszlo Nagy"
+  const headerLinks = [
+    { title: "Home", path : "/" },
+    { title: "About", path : "/about" },
+    { title: "Contact", path : "/contact" },
+  ]
+  const home = {
+    title: "Be Aspiring",
+    subtitle: "Projects that make a difference",
+    subtext: "Check out my projects below"
+  }
+  const about = {
+    title: "About Me"
+  }
+  const contact = {
+    title: "Let's Talk"
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>Welcome to my Portfolio page</div>
   );
 }
 
