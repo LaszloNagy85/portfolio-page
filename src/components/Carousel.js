@@ -34,7 +34,7 @@ class Carousel extends React.Component {
                     title: 'Social Distance',
                     subTitle: 'A simple social network for real friends',
                     imgSrc: wip2s,
-                    link: 'https://www.google.com',
+                    link: 'https://previews.123rf.com/images/3dgenerator/3dgenerator1705/3dgenerator170501803/79350103-3d-web-page-under-construction.jpg',
                     selected: false
                 },
             ]
