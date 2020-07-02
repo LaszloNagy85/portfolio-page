@@ -6,7 +6,6 @@ import Nav from "react-bootstrap/Nav";
 import "./App.css";
 
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
