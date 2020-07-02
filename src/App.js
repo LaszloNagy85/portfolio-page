@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
@@ -53,8 +53,8 @@ const App = () => {
         </Navbar>
 
         <Route path="/" exact render={() => <HomePage title={home.title} subtitle={home.subtitle} text={home.text}/>} /> 
-        <Route path="/about" exact render={() => <AboutPage title={about.title} />} /> 
-        <Route path="/contact" exact render={() => <ContactPage title={contact.title}/>} /> 
+        <Route path="/about" render={() => <AboutPage title={about.title} />} /> 
+        <Route path="/contact" render={() => <ContactPage title={contact.title}/>} /> 
         
         <Footer />
       </Container>
