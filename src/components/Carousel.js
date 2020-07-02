@@ -31,7 +31,7 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 2,
-                    title: 'SocialDistance',
+                    title: 'Social Distance',
                     subTitle: 'A simple social network for real friends',
                     imgSrc: wip2s,
                     link: 'https://www.google.com',
@@ -41,7 +41,7 @@ class Carousel extends React.Component {
         }
     }
 
-    handleCardClick = (id,card) => {
+    handleCardClick = (id) => {
         let items = [...this.state.items];
 
         items[id].selected = !items[id].selected;
@@ -53,7 +53,7 @@ class Carousel extends React.Component {
 
     makeItems = (items) => {
         return items.map(item => {
-        return <Card key={item.id} item={item} onClick={(e => this.handleCardClick(item.id, e))}/>;
+        return <Card key={item.id} item={item} click={() => this.handleCardClick(item.id)}/>;
         });
     }
 
