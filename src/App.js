@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import Container from "react-bootstrap/Container"
 import './App.css';
 
 const App = (props) => {
@@ -22,8 +23,9 @@ const App = (props) => {
   }
   return (
     <Router>
-
-      
+      <Container fluid={true}>
+        <p>Hi there</p>
+      </Container>
     </Router>
   );
 }
