@@ -1,5 +1,9 @@
 import React from "react";
 
+import profile from "../assets/images/profile.jpg";
+import myway from "../assets/images/myway.png";
+import wip1 from "../assets/imageswip1.png";
+
 class Carousel extends React.Component {
     constructor(props){
         super(props)
@@ -7,25 +11,25 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'My Way',
-                    subTitle: 'The Travellers Community',
-                    imgSrc: gitHub,
-                    link: 'https://github.com/kadartibi/myway-backend',
+                    title: 'Laszlo Nagy',
+                    subTitle: 'LinkedIn profile',
+                    imgSrc: profile,
+                    link: 'https://www.linkedin.com/in/laszlo-nagy-bb0b1417a/',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'Laszlo Nagy',
-                    subTitle: 'LinkedIn profile',
-                    imgSrc: LinledIn,
-                    link: 'https://www.linkedin.com/in/laszlo-nagy-bb0b1417a/',
+                    title: 'My Way',
+                    subTitle: 'The Travellers Community',
+                    imgSrc: myway,
+                    link: 'https://github.com/kadartibi/myway-backend',
                     selected: false
                 },
                 {
                     id: 2,
                     title: 'SocialDistance',
                     subTitle: 'A simple social network for real friends',
-                    imgSrc: socialDistance,
+                    imgSrc: wip1,
                     link: 'https://www.google.com',
                     selected: false
                 },
