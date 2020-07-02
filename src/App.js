@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import "./App.css";
 
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
 
 
 const App = (props) => {
@@ -18,7 +19,7 @@ const App = (props) => {
   const home = {
     title: "Be Aspiring",
     subtitle: "Projects that make a difference",
-    subtext: "Check out my projects below",
+    text: "Check out my projects below",
   };
   const about = {
     title: "About Me",
@@ -44,9 +45,13 @@ const App = (props) => {
               <Link className="nav-link" to="/contact">
                 Contact
               </Link>
+
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+
+        <Route path="/" exact render={() => <HomePage title={home.title} subtitle={home.subtitle} text={home.text}/>} /> 
+        
         <Footer />
       </Container>
     </Router>
