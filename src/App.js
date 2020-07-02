@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
 
 const App = (props) => {
@@ -20,7 +21,10 @@ const App = (props) => {
     title: "Let's Talk"
   }
   return (
-    <div>Welcome to my Portfolio page</div>
+    <Router>
+
+      
+    </Router>
   );
 }
 
