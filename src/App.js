@@ -21,7 +21,7 @@ const App = () => {
   const home = {
     title: "Be Aspiring",
     subtitle: "Projects that make a difference",
-    text: "Check out my projects below",
+    text: "Check out my LinkedIn and my projects below",
   };
   const about = {
     title: "About Me",
