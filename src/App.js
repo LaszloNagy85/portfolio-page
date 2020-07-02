@@ -7,9 +7,11 @@ import "./App.css";
 
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 
-const App = (props) => {
+const App = () => {
   const title = "Laszlo Nagy";
   const headerLinks = [
     { title: "Home", path: "/" },
@@ -51,8 +53,8 @@ const App = (props) => {
         </Navbar>
 
         <Route path="/" exact render={() => <HomePage title={home.title} subtitle={home.subtitle} text={home.text}/>} /> 
-        <Route path="/" exact render={} /> 
-        <Route path="/" exact render={} /> 
+        <Route path="/about" exact render={() => <AboutPage title={about.title} />} /> 
+        <Route path="/contact" exact render={() => <ContactPage title={contact.title}/>} /> 
         
         <Footer />
       </Container>
