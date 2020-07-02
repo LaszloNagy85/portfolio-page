@@ -6,7 +6,7 @@ import Card from "./Card";
 
 import profile from "../assets/images/profile.jpg";
 import myway from "../assets/images/myway.png";
-import wip1 from "../assets/images/wip1.png";
+import wip2s from "../assets/images/wip2s.png";
 
 class Carousel extends React.Component {
     constructor(props){
@@ -33,7 +33,7 @@ class Carousel extends React.Component {
                     id: 2,
                     title: 'SocialDistance',
                     subTitle: 'A simple social network for real friends',
-                    imgSrc: wip1,
+                    imgSrc: wip2s,
                     link: 'https://www.google.com',
                     selected: false
                 },
