@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Container from "react-bootstrap/Container"
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
 import './App.css';
 
 const App = (props) => {
@@ -23,8 +24,13 @@ const App = (props) => {
   }
   return (
     <Router>
-      <Container fluid={true}>
-        <p>Hi there</p>
+      <Container className="p-0" fluid={true}>
+        <Navbar className={"border-bottom"}>
+          <Navbar.Brand>Laszlo Nagy</Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbar-toggle" />
+          <Navbar.Collapse id="navbar-toggle" />
+        </Navbar>
+
       </Container>
     </Router>
   );
