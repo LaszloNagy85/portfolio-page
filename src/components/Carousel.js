@@ -51,9 +51,28 @@ class Carousel extends React.Component {
         this.setState({items});
     }
 
+    handleMouseEnter = (id) => {
+        let items = [...this.state.items];
+
+        items[id].selected = true;
+
+        this.setState({items});
+    }
+
+    handleMouseLeave = () => {
+        let items = [...this.state.items];
+
+        items.forEach(item => item.selected = false);
+
+        this.setState({items});
+    }
+
     makeItems = (items) => {
         return items.map(item => {
-        return <Card key={item.id} item={item} click={() => this.handleCardClick(item.id)}/>;
+        return <Card key={item.id} item={item} 
+            click={() => this.handleCardClick(item.id)}
+            enter={() => this.handleMouseEnter(item.id)}
+            leave={() => this.handleMouseLeave()}/>;
         });
     }
 
