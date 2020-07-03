@@ -8,7 +8,7 @@
 - React-Spring
 - EmailJs
 
-### Please have a look, it is deployed on Netliy:
+### Please have a look, it is deployed on Netlify:
 
 #### https://competent-noyce-5a4da7.netlify.app/
 
