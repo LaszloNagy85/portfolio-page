@@ -14,6 +14,6 @@
 
 ### Feel free to contact me.
 
-#### Kind Regards
+### Kind Regards
 
 #### Laszlo Nagy
