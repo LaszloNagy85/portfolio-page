@@ -15,6 +15,8 @@ const ContactPage = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setDisabled(true);
+    //setting just for deployment show
+    setEmailSent(true);
   }
 
   return (

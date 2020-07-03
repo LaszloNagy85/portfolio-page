@@ -13,11 +13,11 @@ import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   const title = "Laszlo Nagy";
-  const headerLinks = [
-    { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Contact", path: "/contact" },
-  ];
+  // const headerLinks = [
+  //   { title: "Home", path: "/" },
+  //   { title: "About", path: "/about" },
+  //   { title: "Contact", path: "/contact" },
+  // ];
   const home = {
     title: "Be Aspiring",
     subtitle: "Projects that make a difference",
@@ -33,7 +33,7 @@ const App = () => {
     <Router>
       <Container className="p-0" fluid={true}>
         <Navbar className="border-bottom" bg="transparent" expand="lg">
-          <Navbar.Brand>Laszlo Nagy</Navbar.Brand>
+          <Navbar.Brand>{title}</Navbar.Brand>
 
           <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
           <Navbar.Collapse id="navbar-toggle">
