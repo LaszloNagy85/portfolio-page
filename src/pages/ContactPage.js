@@ -13,10 +13,10 @@ const ContactPage = (props) => {
   const [emailSent, setEmailSent] = useState(null);
 
   const handleSubmit = (event) => {
-    event.preventDefault();
     setDisabled(true);
+    event.preventDefault();
     //setting just for deployment show
-    setEmailSent(true);
+    setEmailSent(false);
   }
 
   return (
@@ -31,6 +31,7 @@ const ContactPage = (props) => {
               name="name"
               type="text"
               value={name}
+              required
               onChange={(e) => setName(e.target.value)}
             />
           </Form.Group>
@@ -52,6 +53,7 @@ const ContactPage = (props) => {
               as="textarea"
               rows="3"
               value={message}
+              required
               onChange={(e) => setMessage(e.target.value)}
             />
           </Form.Group>

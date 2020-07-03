@@ -13,11 +13,6 @@ import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   const title = "Laszlo Nagy";
-  // const headerLinks = [
-  //   { title: "Home", path: "/" },
-  //   { title: "About", path: "/about" },
-  //   { title: "Contact", path: "/contact" },
-  // ];
   const home = {
     title: "Be Aspiring",
     subtitle: "Projects that make a difference",
