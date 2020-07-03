@@ -17,7 +17,7 @@ code {
 }
 
 .c-card-image {
-  width: 300px;
+  width: 330px;
   height: 480px;
   border-radius: 10px;
   box-shadow: 0px 0px 3px 1px #ccc;
@@ -26,6 +26,10 @@ code {
 .c-card-title {
   font-size: 24px;
   margin: 0px;
+}
+
+.c-card-info-placeholder {
+  height: 110px;
 }
 
 .c-card-info {

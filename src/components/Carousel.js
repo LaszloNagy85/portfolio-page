@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 
 import Card from "./Card";
 
-import profile from "../assets/images/profile.jpg";
+import profile from "../assets/images/profile.png";
 import myway from "../assets/images/myway.png";
 import wip2s from "../assets/images/wip2s.png";
 
